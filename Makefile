@@ -1,5 +1,5 @@
 GO_CMD=go
-BINARY_NAME=jobs
+BINARY_NAME=ado_jobs_queue
 
 # Mark targets as phony (not files)
 .PHONY: all build clean run test
