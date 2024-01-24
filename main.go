@@ -26,15 +26,10 @@ type GetJobsResponse struct {
 	Jobs []Job `json:"jobs"`
 }
 
-// func (g GetJobsResponse) String() string {
-// 	return "Total: " + fmt.Sprint(g.Count.Total) + "\n" +
-// 		"Waiting: " + fmt.Sprint(g.Count.Waiting) + "\n" +
-// 		"Running: " + fmt.Sprint(g.Count.Running) + "\n" +
-// 		"Finished: " + fmt.Sprint(g.Count.Finished) + "\n"
-// }
-
 var (
-	url   string
+	// url = "https://dev.azure.com/<project_name>/_apis/distributedtask/pools/<pool_id>/jobrequests"
+	url string
+	// token = "<personal_access_token>"
 	token string
 )
 
