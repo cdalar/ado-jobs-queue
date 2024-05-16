@@ -15,3 +15,13 @@ type Jobs struct {
 	Count int   `json:"count"`
 	Value []Job `json:"value"`
 }
+
+type Agent struct {
+	ID   int    `json:"id"`
+	Name string `json:"name"`
+}
+
+type Agents struct {
+	Count  int     `json:"count"`
+	Agents []Agent `json:"value"`
+}
