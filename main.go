@@ -101,10 +101,7 @@ func getAgents(options GetAgentsRequest) (GetAgentsResponse, error) {
 		log.Fatalln(err)
 	}
 
-	return GetAgentsResponse{
-		Count:  agents.Count,
-		Agents: agents.Agents,
-	}, nil
+	return GetAgentsResponse(agents), nil
 }
 
 func getJobs(options GetJobsRequest) (GetJobsResponse, error) {
